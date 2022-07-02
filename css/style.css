@@ -1,3 +1,13 @@
 body{
     font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    height: 97vh;
+}
+.container{
+    background:url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    height: 50vh;
+    
 }
