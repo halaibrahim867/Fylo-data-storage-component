@@ -15,32 +15,46 @@
   </head>
   <body>
     <div class="container">
-      <div class="fylo-icons">
-        <div class="fylo">
-          <img src="images/logo.svg" alt="fylo logo" />
+      <div class="card card-image">
+        <div class="logo">
+          <img src="images/logo.svg" alt="icon logo" />
         </div>
         <div class="icons">
-          <span>
+          <div class="i-card">
             <img src="images/icon-document.svg" alt="document icon" />
-          </span>
-          <span>
+          </div>
+          <div class="i-card">
             <img src="images/icon-folder.svg" alt="folder icon" />
-          </span>
-          <span>
+          </div>
+          <div class="i-card">
             <img src="images/icon-upload.svg" alt="upload icon" />
-          </span>
+          </div>
         </div>
       </div>
 
-      <div class="storage"> 
-        <p>You’ve used <span>815 GB</span> of your storage</p>
-        <input type="range" >
-        <div class="space">
-            <p>0GB</p>
-            <p>1000GB</p>
+      <div class="card card-storage"> 
+        <div class="descrip">
+          <p>You've used <strong>815 GB</strong> of your storage</p>
         </div>
-        <div class="storage-left">
-            <p>185 <span>GB Left</span></p>
+        
+        <div class="progress-bar">
+          <div class="progress-bar-color">
+            <div class="ball"></div>
+          </div>
+        </div>
+
+        <div class="minmax-storage">
+            <div class="text"><strong>0 GB</strong></div>
+            <div class="text"> <strong> 1000GB </strong></div>
+          </div>
+        </div>
+        <div class="floating-msg">
+          <div class="msg"> 
+            <strong>185</strong>
+            <span>GB Left</span>
+          </div>
+          
+          <div class="triangle"></div>
         </div>
       </div>
 
