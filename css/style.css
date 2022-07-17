@@ -9,6 +9,7 @@ body{
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    font-family: 'Raleway', sans-serif;
 }
 
 .container{
@@ -23,13 +24,14 @@ body{
 }
 .container .card{
     width: 80%;
-    padding: 20px;
+    
     background-color:var(--second-bgcolor);
     border-radius: 10px;
 
 }
 .container .card-image{
     border-top-right-radius: 75px;
+    padding: 20px;
 
 }
 .container .icons{
@@ -47,7 +49,11 @@ body{
     align-items: center;
     border-radius: 1rem;
 }
+.container .card-storage{
+    position: relative;
+    padding: 5px 20px 50px;
 
+}
 .container .card-storage .descrip{
     color: var(--main-color);
     font-size: 16px;
@@ -79,4 +85,23 @@ body{
     justify-content: space-between;
     color: var(--main-color);
     margin-block-start: 5px;
+}
+.container .floating-msg{
+    position: absolute;
+    top: 60%;
+    transform: translateY(60%);
+    background-color: var(--main-color00000);
+}
+.container .floating-msg .msg{
+    background-color: white;
+    padding: 1.4rem 3rem;
+    border-radius: 10px;
+}
+.container .floating-msg .msg strong{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--second-bgcolor);
+}
+.container .floating-msg span{
+    color: rgb(196, 189, 189);
 }
