@@ -18,6 +18,8 @@ body {
         background-repeat: no-repeat;
         background-size: auto;
         background-position-y: bottom;
+        height: 97.5vh;
+        width: 90vw;
         };
 }
 .container {
@@ -34,9 +36,15 @@ body {
   border-radius: 10px;
 }
 @media(min-width:992px){
+    .container{
+        display: grid;
+        grid-template-columns: 25rem 34.375rem;
+        justify-content:flex-end;
+    }
+    .container .card{
+        margin-block-start: -10rem;
+    }
 
-   
-    
 }
 .container .card-image {
   border-top-right-radius: 75px;
