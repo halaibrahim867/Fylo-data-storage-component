@@ -1,107 +1,117 @@
-:root{
-    --main-bgcolor:hsl(229,57%,11%);
-    --second-bgcolor:hsl(228,56%,26%);
-    --main-color:hsl(243, 100%, 93%);
+:root {
+  --main-bgcolor: hsl(229, 57%, 11%);
+  --second-bgcolor: hsl(228, 56%, 26%);
+  --main-color: hsl(243, 100%, 93%);
 }
-body{
-    background-image:url(../images/bg-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Raleway', sans-serif;
+body {
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Raleway", sans-serif;
 }
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-    gap: 1.5rem;
-
-
+@media(min-width:992px){
+    body{
+        background-image: url(../images/bg-desktop.png);
+        background-color: var(--main-bgcolor);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-y: bottom;
+        };
 }
-.container .card{
-    width: 80%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container .card {
+  width: 80%;
+  background-color: var(--second-bgcolor);
+  border-radius: 10px;
+}
+@media(min-width:992px){
+
+   
     
-    background-color:var(--second-bgcolor);
-    border-radius: 10px;
-
 }
-.container .card-image{
-    border-top-right-radius: 75px;
-    padding: 20px;
-
+.container .card-image {
+  border-top-right-radius: 75px;
+  padding: 20px;
 }
-.container .icons{
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    margin-block-start: 2rem;
-
+.container .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-block-start: 2rem;
 }
-.container .icons .i-card{
-    background-color: var(--main-bgcolor);
-    padding: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
+.container .icons .i-card {
+  background-color: var(--main-bgcolor);
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
 }
-.container .card-storage{
-    position: relative;
-    padding: 5px 20px 50px;
-
+.container .card-storage {
+  position: relative;
+  padding: 5px 20px 50px;
 }
-.container .card-storage .descrip{
-    color: var(--main-color);
-    font-size: 16px;
-    text-align: center;
+.container .card-storage .descrip {
+  color: var(--main-color);
+  font-size: 16px;
+  text-align: center;
 }
-.container  .progress-bar{
-    width: 100%;
-    background-color:rgb(15, 28, 82);
-    border-radius: 1rem;
-    padding: 4px;
+.container .progress-bar {
+  width: 100%;
+  background-color: rgb(15, 28, 82);
+  border-radius: 1rem;
+  padding: 4px;
 }
-.container .progress-bar-color{
-    width: 75%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: linear-gradient(to right,hsl(6, 100%, 80%) ,hsl(335, 100%, 65%) );
-    border-radius: 1rem;
+.container .progress-bar-color {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 1rem;
 }
-.container .progress-bar-color .ball{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: var(--main-color);
+.container .progress-bar-color .ball {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
 }
-.container .minmax-storage{
-    display: flex;
-    justify-content: space-between;
-    color: var(--main-color);
-    margin-block-start: 5px;
+.container .minmax-storage {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+  margin-block-start: 5px;
 }
-.container .floating-msg{
-    position: absolute;
-    top: 60%;
-    transform: translateY(60%);
-    background-color: var(--main-color00000);
+.container .floating-msg {
+  position: absolute;
+  top: 60%;
+  transform: translateY(60%);
+  background-color: var(--main-color00000);
 }
-.container .floating-msg .msg{
-    background-color: white;
-    padding: 1.4rem 3rem;
-    border-radius: 10px;
+.container .floating-msg .msg {
+  background-color: white;
+  padding: 1.4rem 3rem;
+  border-radius: 10px;
 }
-.container .floating-msg .msg strong{
-    font-size: 35px;
-    font-weight: 700;
-    color: var(--second-bgcolor);
+.container .floating-msg .msg strong {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--second-bgcolor);
 }
-.container .floating-msg span{
-    color: rgb(196, 189, 189);
+.container .floating-msg span {
+  color: rgb(196, 189, 189);
 }
